@@ -1430,11 +1430,11 @@ document.addEventListener('DOMContentLoaded', () => {
                     if (overviewItem) activateTab('overview', overviewItem);
                 }
 
-                // Cập nhật trạng thái pills trong Wh-questions cho CB219
+                // Cập nhật trạng thái pills trong Wh-questions cho CB219 (mở đến câu hỏi When: WHAT, WHO, WHEN)
                 const whPills = document.querySelectorAll('.w-pill');
                 whPills.forEach(pill => {
                     const text = pill.textContent.trim().toUpperCase();
-                    if (!text.startsWith('WHAT')) {
+                    if (!text.startsWith('WHAT') && !text.startsWith('WHO') && !text.startsWith('WHEN')) {
                         pill.classList.add('locked-pill');
                         pill.style.opacity = '0.5';
                         pill.style.cursor = 'not-allowed';
@@ -1674,7 +1674,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (state.studentClass === 'CB219') {
             const allowed = ['overview', 'flower-garden', 'yes-no', 'choice', 'wh-questions', 'benefits', 'activities'];
             if (!allowed.includes(target)) {
-                alert('🔒 Mục này chưa được mở cho lớp CB219.\nHiện tại lớp CB219 được mở: Tổng quan, Yes/No, Choice, Wh-Questions (đến câu hỏi "What kinds of..."), Bảng Lợi Ích và Bảng Hoạt Động.');
+                alert('🔒 Mục này chưa được mở cho lớp CB219.\nHiện tại lớp CB219 được mở: Tổng quan, Yes/No, Choice, Wh-Questions (đến câu hỏi "When"), Bảng Lợi Ích và Bảng Hoạt Động.');
                 return;
             }
         }
@@ -1746,7 +1746,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (state.studentClass === 'CB219') {
             const allowed = ['overview', 'flower-garden', 'yes-no', 'choice', 'wh-questions', 'benefits', 'activities'];
             if (!allowed.includes(target)) {
-                alert('🔒 Mục này chưa được mở cho lớp CB219.\nHiện tại lớp CB219 được mở: Tổng quan, Yes/No, Choice, Wh-Questions (đến câu hỏi "What kinds of..."), Bảng Lợi Ích và Bảng Hoạt Động.');
+                alert('🔒 Mục này chưa được mở cho lớp CB219.\nHiện tại lớp CB219 được mở: Tổng quan, Yes/No, Choice, Wh-Questions (đến câu hỏi "When"), Bảng Lợi Ích và Bảng Hoạt Động.');
                 return;
             }
         }
@@ -5573,8 +5573,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const whShowcase = document.getElementById('wh-showcase');
 
     window.filterWh = (cat) => {
-        if (state.studentClass === 'CB219' && cat !== 'what') {
-            alert('🔒 Nhóm câu hỏi này chưa được mở cho lớp CB219.\nHiện tại lớp CB219 được học đến câu hỏi "4. What kinds of [danh từ] do you like?".');
+        const cb219AllowedWh = ['what', 'who', 'when'];
+        if (state.studentClass === 'CB219' && !cb219AllowedWh.includes(cat)) {
+            alert('🔒 Nhóm câu hỏi này chưa được mở cho lớp CB219.\nHiện tại lớp CB219 được học đến câu hỏi "When" (bao gồm WHAT, WHO và WHEN).');
             return;
         }
         document.querySelectorAll('.w-pill').forEach(p => p.classList.remove('active'));
@@ -5589,15 +5590,14 @@ document.addEventListener('DOMContentLoaded', () => {
         let list = whBank[cat] || [];
         const isCB219 = (state.studentClass === 'CB219');
         let cbNoticeHtml = '';
-        if (isCB219 && cat === 'what') {
-            list = list.slice(0, 4);
+        if (isCB219) {
             cbNoticeHtml = `
                 <div style="margin-bottom: 1.25rem; background: rgba(59, 130, 246, 0.08); border: 1.5px dashed #3b82f6; border-radius: 10px; padding: 0.75rem 1rem; display: flex; align-items: center; justify-content: space-between; gap: 0.75rem; flex-wrap: wrap;">
                     <div style="display: flex; align-items: center; gap: 0.5rem; color: #1d4ed8; font-weight: 700; font-size: 0.95rem;">
-                        <i class="fa-solid fa-circle-info"></i> Lớp CB219: Mở các câu hỏi từ 1 đến 4 (đến câu hỏi "What kinds of...")
+                        <i class="fa-solid fa-circle-info"></i> Lớp CB219: Đã mở nhóm câu hỏi WHAT (6 mẫu), WHO (2 mẫu) và WHEN (1 mẫu)
                     </div>
                     <div style="font-size: 0.85rem; color: #64748b; font-weight: 500;">
-                        Các câu hỏi từ 5 đến 6 và các dạng Wh- khác sẽ được mở theo tiến độ bài học
+                        Các dạng WHERE, WHY, HOW sẽ được mở theo tiến độ bài học
                     </div>
                 </div>
             `;
@@ -5736,7 +5736,7 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
         if (state.studentClass === 'CB219' && type !== 'yn' && type !== 'choice' && type !== 'wh') {
-            alert('🔒 Phần luyện tập này chưa được mở cho lớp CB219.\nHiện tại lớp CB219 được mở: Tổng quan, Yes/No, Choice, Wh-Questions (đến câu hỏi "What kinds of..."), Bảng Lợi Ích và Bảng Hoạt Động.');
+            alert('🔒 Phần luyện tập này chưa được mở cho lớp CB219.\nHiện tại lớp CB219 được mở: Tổng quan, Yes/No, Choice, Wh-Questions (đến câu hỏi "When"), Bảng Lợi Ích và Bảng Hoạt Động.');
             return;
         }
 
@@ -5747,7 +5747,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const safeWhBank = typeof whBank !== 'undefined' ? whBank : {};
             let whList = [];
             if (state.studentClass === 'CB219') {
-                whList = safeWhBank['what'] ? safeWhBank['what'].slice(0, 4) : [];
+                whList = [...(safeWhBank['what'] || []), ...(safeWhBank['who'] || []), ...(safeWhBank['when'] || [])];
             } else {
                 const whValues = Object.values(safeWhBank);
                 whList = whValues.flat ? whValues.flat() : whValues.reduce((acc, val) => acc.concat(val), []);
