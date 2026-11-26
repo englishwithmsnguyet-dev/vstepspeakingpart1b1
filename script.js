@@ -12524,7 +12524,7 @@ const practiceTopicsData = [
                         "title": "🎵 [Chất giọng xuất sắc]",
                         "items": [
                             {
-                                "en": "a warm voice and exceptional musical talent",
+                                "en": "a warm voice and great musical talent",
                                 "vn": "chất giọng ấm áp và tài năng âm nhạc xuất chúng"
                             },
                             {
@@ -12580,8 +12580,8 @@ const practiceTopicsData = [
                 "samples": [
                     {
                         "label": "Bài mẫu Cách 1 (Giọng hát ấm áp giúp giải tỏa căng thẳng sau giờ làm - 25 từ)",
-                        "text": "I like them primarily because they have a warm voice and exceptional musical talent. Enjoying their wonderful music helps me reduce stress and clear my mind.",
-                        "formatted": "→ I like them primarily because they have <span class=\"sub-hl\">a warm voice and exceptional musical talent</span>. Enjoying their wonderful music helps me <span class=\"sub-hl\">reduce stress</span> and <span class=\"sub-hl\">clear my mind</span>."
+                        "text": "I like them primarily because they have a warm voice and great musical talent. Enjoying their wonderful music helps me reduce stress and clear my mind.",
+                        "formatted": "→ I like them primarily because they have <span class=\"sub-hl\">a warm voice and great musical talent</span>. Enjoying their wonderful music helps me <span class=\"sub-hl\">reduce stress</span> and <span class=\"sub-hl\">clear my mind</span>."
                     },
                     {
                         "label": "Bài mẫu Cách 2 (Thái độ khiêm tốn, tích cực làm từ thiện truyền động lực lớn - 25 từ)",
@@ -15136,7 +15136,7 @@ const practiceTopicsData = [
                                 "vn": "Kaity Nguyễn, nữ diễn viên trẻ đầy ấn tượng"
                             },
                             {
-                                "en": "Thanh Hang, a charismatic superstar",
+                                "en": "Thanh Hang, a charming famous star",
                                 "vn": "Thanh Hằng, siêu sao đầy thần thái"
                             },
                             {
@@ -15229,7 +15229,7 @@ const practiceTopicsData = [
                                 "vn": "tài năng diễn xuất tự nhiên và chiều sâu cảm xúc"
                             },
                             {
-                                "en": "professional training and versatility in roles",
+                                "en": "professional training and acting well in many different roles",
                                 "vn": "được đào tạo bài bản và khả năng biến hóa nhiều dạng vai"
                             },
                             {
@@ -22577,7 +22577,7 @@ const practiceTopicsData = [
                                 "vn": "niềm hy vọng, khởi đầu mới và sức sống mãnh liệt"
                             },
                             {
-                                "en": "warmth, positivity, and boundless optimism",
+                                "en": "warmth, positivity, and endless positivity",
                                 "vn": "sự ấm áp, tính tích cực và tinh thần lạc quan"
                             }
                         ]
@@ -27726,7 +27726,7 @@ const practiceTopicsData = [
                                 "vn": "thời tiết mát mẻ, rừng thông xanh và muôn hoa rực rỡ"
                             },
                             {
-                                "en": "peaceful atmosphere and magnificent green valleys",
+                                "en": "peaceful atmosphere and beautiful green valleys",
                                 "vn": "bầu không khí bình yên và thung lũng xanh hùng vĩ"
                             },
                             {
@@ -35258,7 +35258,7 @@ const practiceTopicsData = [
                                 "vn": "tiện lợi, kín đáo và yên lặng"
                             },
                             {
-                                "en": "flexible and non-intrusive for busy people",
+                                "en": "flexible and polite for busy people",
                                 "vn": "linh hoạt và không làm phiền người bận rộn"
                             },
                             {
@@ -43826,7 +43826,7 @@ const practiceTopicsData = [
                                 "vn": "ngợp thở và căng thẳng thần kinh"
                             },
                             {
-                                "en": "suffocated in the tight crowd",
+                                "en": "uncomfortable in the tight crowd",
                                 "vn": "ngột ngạt trong biển người chen chúc"
                             }
                         ]
@@ -47982,7 +47982,7 @@ const practiceTopicsData = [
                         "title": "😞 [Tính từ cảm xúc tiêu cực]",
                         "items": [
                             {
-                                "en": "disappointed, discouraged, and downhearted",
+                                "en": "disappointed, tired, and unhappy",
                                 "vn": "thất vọng, nản lòng và buồn bã"
                             },
                             {
@@ -48016,7 +48016,7 @@ const practiceTopicsData = [
                         "title": "🌧️ [Tính từ cảm xúc buồn bã]",
                         "items": [
                             {
-                                "en": "lonely, sorrowful, and deeply upset",
+                                "en": "lonely, sad, and very upset",
                                 "vn": "cô đơn, đau lòng và rất buồn bực"
                             },
                             {
@@ -48029,13 +48029,13 @@ const practiceTopicsData = [
                 "samples": [
                     {
                         "label": "Bài mẫu Cách 1 (Kết quả thi kém khiến thất vọng, nản lòng - 22 từ)",
-                        "text": "I usually feel sad when I encounter poor exam results or failure at work. It makes me feel disappointed, discouraged, and downhearted despite my best efforts.",
-                        "formatted": "→ I usually feel sad when I encounter <span class=\"sub-hl\">poor exam results or failure at work</span>. It makes me feel <span class=\"sub-hl\">disappointed, discouraged, and downhearted</span> despite my best efforts."
+                        "text": "I usually feel sad when I encounter poor exam results or failure at work. It makes me feel disappointed, tired, and unhappy despite my best efforts.",
+                        "formatted": "→ I usually feel sad when I encounter <span class=\"sub-hl\">poor exam results or failure at work</span>. It makes me feel <span class=\"sub-hl\">disappointed, tired, and unhappy</span> despite my best efforts."
                     },
                     {
                         "label": "Bài mẫu Cách 2 (Cãi vã với người thân khiến nặng lòng - 21 từ)",
-                        "text": "Another thing that saddens me is arguments and conflicts with close family or friends. Experiencing misunderstandings makes me feel lonely, sorrowful, and deeply upset for days.",
-                        "formatted": "→ Another thing that saddens me is <span class=\"sub-hl\">arguments and conflicts with close family or friends</span>. Experiencing misunderstandings makes me feel <span class=\"sub-hl\">lonely, sorrowful, and deeply upset</span> for days."
+                        "text": "Another thing that saddens me is arguments and conflicts with close family or friends. Experiencing misunderstandings makes me feel lonely, sad, and very upset for days.",
+                        "formatted": "→ Another thing that saddens me is <span class=\"sub-hl\">arguments and conflicts with close family or friends</span>. Experiencing misunderstandings makes me feel <span class=\"sub-hl\">lonely, sad, and very upset</span> for days."
                     }
                 ]
             },
@@ -48134,7 +48134,7 @@ const practiceTopicsData = [
                                 "vn": "trò chuyện tâm sự cùng bạn thân hoặc bố mẹ"
                             },
                             {
-                                "en": "sharing my feelings with an empathetic listener",
+                                "en": "sharing my feelings with a kind and caring listener",
                                 "vn": "chia sẻ cảm xúc với một người biết lắng nghe và thấu hiểu"
                             }
                         ]
@@ -51220,7 +51220,7 @@ const practiceTopicsData = [
                 "qNum": 3,
                 "question": "Why is recycling important?",
                 "qType": "Wh-Question: Why is recycling important?",
-                "formula": "<div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 1 (Bảo vệ môi trường tự nhiên, giảm ô nhiễm rác thải nhựa):</div>\n                    <div class=\"topic-formula-text\">\n                        → Recycling is extremely vital because it prevents <span class=\"formula-bracket-hl\">[vấn nạn môi trường]</span>. Reprocessing old materials helps <span class=\"formula-bracket-hl\">[lợi ích môi trường - Vo]</span> and protects wildlife.\n                    </div>\n                </div>\n                <div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 2 (Tiết kiệm tài nguyên thiên nhiên và tiết kiệm năng lượng):</div>\n                    <div class=\"topic-formula-text\">\n                        → Furthermore, recycling helps industries <span class=\"formula-bracket-hl\">[lợi ích 1 - Vo]</span>. It creates a cleaner living space and helps us <span class=\"formula-bracket-hl\">[lợi ích 2 - Vo]</span>.\n                    </div>\n                </div>",
+                "formula": "<div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 1 (Bảo vệ môi trường tự nhiên, giảm ô nhiễm rác thải nhựa):</div>\n                    <div class=\"topic-formula-text\">\n                        → Recycling is extremely vital because it prevents <span class=\"formula-bracket-hl\">[vấn nạn môi trường]</span>. Reusing old materials helps <span class=\"formula-bracket-hl\">[lợi ích môi trường - Vo]</span> and protects wildlife.\n                    </div>\n                </div>\n                <div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 2 (Tiết kiệm tài nguyên thiên nhiên và tiết kiệm năng lượng):</div>\n                    <div class=\"topic-formula-text\">\n                        → Furthermore, recycling helps industries <span class=\"formula-bracket-hl\">[lợi ích 1 - Vo]</span>. It creates a cleaner living space and helps us <span class=\"formula-bracket-hl\">[lợi ích 2 - Vo]</span>.\n                    </div>\n                </div>",
                 "vocabGroups": [
                     {
                         "title": "⚠️ [Vấn nạn môi trường]",
@@ -51265,8 +51265,8 @@ const practiceTopicsData = [
                 "samples": [
                     {
                         "label": "Bài mẫu Cách 1 (Ngăn chặn ô nhiễm biển, bảo tồn tài nguyên quý giá - 25 từ)",
-                        "text": "Recycling is extremely vital because it prevents plastic pollution in our oceans and rivers. Reprocessing old materials helps conserve precious natural resources and protects wildlife.",
-                        "formatted": "→ Recycling is extremely vital because it prevents <span class=\"sub-hl\">plastic pollution in our oceans and rivers</span>. Reprocessing old materials helps <span class=\"sub-hl\">conserve precious natural resources</span> and protects wildlife."
+                        "text": "Recycling is extremely vital because it prevents plastic pollution in our oceans and rivers. Reusing old materials helps save natural resources and protects wildlife.",
+                        "formatted": "→ Recycling is extremely vital because it prevents <span class=\"sub-hl\">plastic pollution in our oceans and rivers</span>. Reusing old materials helps <span class=\"sub-hl\">conserve precious natural resources</span> and protects wildlife."
                     },
                     {
                         "label": "Bài mẫu Cách 2 (Tiết kiệm tiền bạc và giữ gìn môi trường sống trong lành - 24 từ)",
