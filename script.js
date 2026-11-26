@@ -16140,7 +16140,7 @@ const practiceTopicsData = [
                                 "vn": "đi ăn ngoài ở các nhà hàng đa dạng"
                             },
                             {
-                                "en": "convenient, fast, and rich in culinary variety",
+                                "en": "convenient, fast, and full of delicious food choices",
                                 "vn": "thuận tiện, nhanh chóng và phong phú ẩm thực"
                             }
                         ]
@@ -16154,8 +16154,8 @@ const practiceTopicsData = [
                     },
                     {
                         "label": "Bài mẫu Cách 2 (Ăn nhà hàng nhanh gọn, tiết kiệm thời gian dọn dẹp - 25 từ)",
-                        "text": "To be honest, I prefer dining out at diverse restaurants because it is extremely convenient, fast, and rich in culinary variety. Dining out allows busy people to save time and reduce stress.",
-                        "formatted": "→ To be honest, I prefer <span class=\"sub-hl\">dining out at diverse restaurants</span> because it is extremely <span class=\"sub-hl\">convenient, fast, and rich in culinary variety</span>. Dining out allows busy people to <span class=\"sub-hl\">save time</span> and <span class=\"sub-hl\">reduce stress</span>."
+                        "text": "To be honest, I prefer dining out at diverse restaurants because it is extremely convenient, fast, and full of delicious food choices. Dining out allows busy people to save time and reduce stress.",
+                        "formatted": "→ To be honest, I prefer <span class=\"sub-hl\">dining out at diverse restaurants</span> because it is extremely <span class=\"sub-hl\">convenient, fast, and full of delicious food choices</span>. Dining out allows busy people to <span class=\"sub-hl\">save time</span> and <span class=\"sub-hl\">reduce stress</span>."
                     }
                 ]
             }
@@ -43879,8 +43879,8 @@ const practiceTopicsData = [
                     },
                     {
                         "label": "Bài mẫu Cách 2 (Âm nhạc sôi nổi tiếp thêm năng lượng và niềm vui - 27 từ)",
-                        "text": "Surprisingly, I felt really excited and energetic. The lively music and smiling faces helped me reduce stress and escape from daily stress after a busy work week.",
-                        "formatted": "→ Surprisingly, I felt really <span class=\"sub-hl\">excited and energetic</span>. The lively music and smiling faces helped me <span class=\"sub-hl\">reduce stress</span> and <span class=\"sub-hl\">escape from daily stress</span> after a busy work week."
+                        "text": "Surprisingly, I felt really excited and energetic. The lively music and smiling faces helped me reduce stress and relax after a busy work week.",
+                        "formatted": "→ Surprisingly, I felt really <span class=\"sub-hl\">excited and energetic</span>. The lively music and smiling faces helped me <span class=\"sub-hl\">reduce stress</span> and <span class=\"sub-hl\">relax</span> after a busy work week."
                     }
                 ]
             },
@@ -46730,8 +46730,8 @@ const practiceTopicsData = [
                 "samples": [
                     {
                         "label": "Bài mẫu Cách 1 (Ký ức định hình nhân cách, giúp an lòng thư thái - 26 từ)",
-                        "text": "Yes, absolutely. Memories are extremely precious because they shape our personal identity and family connections. Cherishing memories helps people clear my mind and appreciate life.",
-                        "formatted": "→ Yes, absolutely. Memories are extremely precious because they shape <span class=\"sub-hl\">our personal identity and family connections</span>. Cherishing memories helps people <span class=\"sub-hl\">clear my mind</span> and appreciate life."
+                        "text": "Yes, absolutely. Memories are extremely precious because they shape our personal identity and family connections. Keeping good memories helps people feel happy and appreciate life.",
+                        "formatted": "→ Yes, absolutely. Memories are extremely precious because they shape <span class=\"sub-hl\">our personal identity and family connections</span>. Keeping good memories helps people <span class=\"sub-hl\">feel happy</span> and appreciate life."
                     },
                     {
                         "label": "Bài mẫu Cách 2 (Bài học quá khứ giúp trưởng thành và khôn ngoan - 25 từ)",
