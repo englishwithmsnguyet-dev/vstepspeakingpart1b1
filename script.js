@@ -16067,7 +16067,7 @@ const practiceTopicsData = [
                         "title": "😌 [Tính từ cảm xúc hài lòng & Phấn khởi]",
                         "items": [
                             {
-                                "en": "relaxed, satisfied, and pampered",
+                                "en": "relaxed, happy, and comfortable",
                                 "vn": "thư thái, hài lòng và được chăm sóc chu đáo"
                             },
                             {
@@ -16099,7 +16099,7 @@ const practiceTopicsData = [
                     {
                         "label": "Bài mẫu Cách 1 (Hài lòng với đồ ăn ngon, không phải rửa bát - 26 từ)",
                         "text": "I usually feel really relaxed, happy, and comfortable because I can enjoy delicious special dishes and sweet desserts. Not having to wash dishes helps me reduce stress after work.",
-                        "formatted": "→ I usually feel really <span class=\"sub-hl\">relaxed, satisfied, and pampered</span> because I can enjoy <span class=\"sub-hl\">delicious special dishes and sweet desserts</span>. Not having to wash dishes helps me <span class=\"sub-hl\">reduce stress</span> after work."
+                        "formatted": "→ I usually feel really <span class=\"sub-hl\">relaxed, happy, and comfortable</span> because I can enjoy <span class=\"sub-hl\">delicious special dishes and sweet desserts</span>. Not having to wash dishes helps me <span class=\"sub-hl\">reduce stress</span> after work."
                     },
                     {
                         "label": "Bài mẫu Cách 2 (Không gian ấm cúng giúp thư giãn tinh thần - 24 từ)",
@@ -22684,7 +22684,7 @@ const practiceTopicsData = [
                         "title": "✨ [Tính từ cảm xúc]",
                         "items": [
                             {
-                                "en": "confident and poised",
+                                "en": "confident and comfortable",
                                 "vn": "tự tin và đĩnh đạc"
                             },
                             {
@@ -22749,7 +22749,7 @@ const practiceTopicsData = [
                     {
                         "label": "Bài mẫu Cách 1 (Mặc đồ xanh navy tôn dáng, tự tin đĩnh đạc - 26 từ)",
                         "text": "Yes, of course. Most of my shirts and jackets are shades of deep blue and classic navy. Wearing this color helps me show my personal style easily and makes me feel confident.",
-                        "formatted": "→ Yes, of course. Most of my shirts and jackets are <span class=\"sub-hl\">shades of deep blue and classic navy</span>. Wearing this color helps me <span class=\"sub-hl\">show my personal style easily</span> and makes me feel <span class=\"sub-hl\">confident and poised</span>."
+                        "formatted": "→ Yes, of course. Most of my shirts and jackets are <span class=\"sub-hl\">shades of deep blue and classic navy</span>. Wearing this color helps me <span class=\"sub-hl\">show my personal style easily</span> and makes me feel <span class=\"sub-hl\">confident</span>."
                     },
                     {
                         "label": "Bài mẫu Cách 2 (Phối nhiều màu theo mùa để làm mới diện mạo - 27 từ)",
@@ -24245,7 +24245,7 @@ const practiceTopicsData = [
                     {
                         "label": "Bài mẫu Cách 2 (Mua sắm online vào đợt sale lớn để tiết kiệm tiền và thời gian - 28 từ)",
                         "text": "I rarely visit physical clothing stores; instead, I shop online during big monthly e-commerce sales. Ordering clothes on mobile apps helps me save money and save a lot of time.",
-                        "formatted": "→ I rarely visit physical clothing stores; instead, I shop online <span class=\"sub-hl\">during big monthly e-commerce sales</span>. Ordering clothes on mobile apps helps me <span class=\"sub-hl\">save money</span> and <span class=\"sub-hl\">save time</span> really."
+                        "formatted": "→ I rarely visit physical clothing stores; instead, I shop online <span class=\"sub-hl\">during big monthly e-commerce sales</span>. Ordering clothes on mobile apps helps me <span class=\"sub-hl\">save money</span> and <span class=\"sub-hl\">save a lot of time</span>."
                     }
                 ]
             }
@@ -36136,8 +36136,8 @@ const practiceTopicsData = [
                     },
                     {
                         "label": "Bài mẫu Cách 2 (Đính kèm tài liệu lớn, lưu trữ thỏa thuận tin cậy - 26 từ)",
-                        "text": "In addition, email allows users to send large files and documents easily. It is the best method to maintain a reliable record of agreements in business.",
-                        "formatted": "→ In addition, email allows users to <span class=\"sub-hl\">attach large documents, spreadsheets, and presentations</span> easily. It is the best method to <span class=\"sub-hl\">maintain a reliable record of agreements</span> in business."
+                        "text": "In addition, email allows users to send large files and documents easily. It is the best method to keep a clear record of work agreements.",
+                        "formatted": "→ In addition, email allows users to <span class=\"sub-hl\">send large files and documents</span> easily. It is the best method to <span class=\"sub-hl\">keep a clear record of work agreements</span>."
                     }
                 ]
             },
@@ -43835,7 +43835,7 @@ const practiceTopicsData = [
                         "title": "⚠️ [Nguyên nhân gây khó chịu]",
                         "items": [
                             {
-                                "en": "the deafening noise and stuffy air",
+                                "en": "the very loud noise and stuffy air",
                                 "vn": "tiếng ồn inh tai và không khí oi bức ngột ngạt"
                             },
                             {
@@ -43874,8 +43874,8 @@ const practiceTopicsData = [
                 "samples": [
                     {
                         "label": "Bài mẫu Cách 1 (Mệt mỏi vì ồn ào và oi bức, muốn về nhà thư giãn - 27 từ)",
-                        "text": "To be honest, I felt quite exhausted and uncomfortable due to the deafening noise and stuffy air. I just wanted to leave quickly to clear my mind and relax.",
-                        "formatted": "→ To be honest, I felt quite <span class=\"sub-hl\">exhausted and uncomfortable</span> due to <span class=\"sub-hl\">the deafening noise and stuffy air</span>. I just wanted to leave quickly to <span class=\"sub-hl\">clear my mind</span> and relax."
+                        "text": "To be honest, I felt quite exhausted and uncomfortable due to the very loud noise and stuffy air. I just wanted to leave quickly to clear my mind and relax.",
+                        "formatted": "→ To be honest, I felt quite <span class=\"sub-hl\">exhausted and uncomfortable</span> due to <span class=\"sub-hl\">the very loud noise and stuffy air</span>. I just wanted to leave quickly to <span class=\"sub-hl\">clear my mind</span> and relax."
                     },
                     {
                         "label": "Bài mẫu Cách 2 (Âm nhạc sôi nổi tiếp thêm năng lượng và niềm vui - 27 từ)",
@@ -46603,7 +46603,7 @@ const practiceTopicsData = [
                 "qNum": 1,
                 "question": "What is your first memory of going to school?",
                 "qType": "Wh-Question: What is your first memory of going to school?",
-                "formula": "<div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 1 (Kỷ niệm ngày đầu tiên vào lớp một: Nắm tay mẹ, bỡ ngỡ rụt rè):</div>\n                    <div class=\"topic-formula-text\">\n                        → My very first school memory was <span class=\"formula-bracket-hl\">[kỷ niệm ngày đầu đi học]</span>. Walking into the classroom made me feel <span class=\"formula-bracket-hl\">[cảm xúc tuổi thơ]</span>.\n                    </div>\n                </div>\n                <div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 2 (Kỷ niệm gặp gỡ cô giáo hiền từ và kết bạn cùng bàn):</div>\n                    <div class=\"topic-formula-text\">\n                        → I vividly remember <span class=\"formula-bracket-hl\">[kỷ niệm ấm áp ở trường]</span>. That sweet memory helped me <span class=\"formula-bracket-hl\">[lợi ích ngoài Bảng - Vo]</span> and enjoy going to school.\n                    </div>\n                </div>",
+                "formula": "<div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 1 (Kỷ niệm ngày đầu tiên vào lớp một: Nắm tay mẹ, bỡ ngỡ rụt rè):</div>\n                    <div class=\"topic-formula-text\">\n                        → My very first school memory was <span class=\"formula-bracket-hl\">[kỷ niệm ngày đầu đi học]</span>. Walking into the classroom made me feel <span class=\"formula-bracket-hl\">[cảm xúc tuổi thơ]</span>.\n                    </div>\n                </div>\n                <div class=\"topic-formula-row\">\n                    <div class=\"topic-formula-title\">- Cách 2 (Kỷ niệm gặp gỡ cô giáo hiền từ và kết bạn cùng bàn):</div>\n                    <div class=\"topic-formula-text\">\n                        → I clearly remember <span class=\"formula-bracket-hl\">[kỷ niệm ấm áp ở trường]</span>. That sweet memory helped me <span class=\"formula-bracket-hl\">[lợi ích ngoài Bảng - Vo]</span> and enjoy going to school.\n                    </div>\n                </div>",
                 "vocabGroups": [
                     {
                         "title": "🎒 [Kỷ niệm ngày đầu đi học]",
@@ -46671,8 +46671,8 @@ const practiceTopicsData = [
                     },
                     {
                         "label": "Bài mẫu Cách 2 (Cô giáo dịu hiền giúp vượt qua sợ hãi - 25 từ)",
-                        "text": "I vividly remember my gentle first-grade teacher welcoming me with a warm smile. That sweet memory helped me overcome my initial fear of the new classroom and enjoy going to school.",
-                        "formatted": "→ I vividly remember <span class=\"sub-hl\">my gentle first-grade teacher welcoming me with a warm smile</span>. That sweet memory helped me <span class=\"sub-hl\">overcome my initial fear of the new classroom</span> and enjoy going to school."
+                        "text": "I clearly remember my gentle first-grade teacher welcoming me with a warm smile. That sweet memory helped me overcome my initial fear of the new classroom and enjoy going to school.",
+                        "formatted": "→ I clearly remember <span class=\"sub-hl\">my gentle first-grade teacher welcoming me with a warm smile</span>. That sweet memory helped me <span class=\"sub-hl\">overcome my initial fear of the new classroom</span> and enjoy going to school."
                     }
                 ]
             },
@@ -46781,7 +46781,7 @@ const practiceTopicsData = [
                         "title": "🌟 [Lợi ích ngoài Bảng - Vo]",
                         "items": [
                             {
-                                "en": "relive unforgettable youthful moments vividly",
+                                "en": "relive unforgettable youthful moments clearly",
                                 "vn": "sống lại những khoảnh khắc thanh xuân khó quên một cách sống động"
                             }
                         ]
@@ -46795,8 +46795,8 @@ const practiceTopicsData = [
                     },
                     {
                         "label": "Bài mẫu Cách 2 (Viết nhật ký giữ thư tay để sống lại thanh xuân - 25 từ)",
-                        "text": "In addition, I also write personal diary entries and save handwritten letters. Holding physical souvenirs helps me relive unforgettable youthful moments vividly anytime I want.",
-                        "formatted": "→ In addition, I also <span class=\"sub-hl\">write personal diary entries and save handwritten letters</span>. Holding physical souvenirs helps me <span class=\"sub-hl\">relive unforgettable youthful moments vividly</span> anytime I want."
+                        "text": "In addition, I also write personal diary entries and save handwritten letters. Holding physical souvenirs helps me relive unforgettable youthful moments clearly anytime I want.",
+                        "formatted": "→ In addition, I also <span class=\"sub-hl\">write personal diary entries and save handwritten letters</span>. Holding physical souvenirs helps me <span class=\"sub-hl\">relive unforgettable youthful moments clearly</span> anytime I want."
                     }
                 ]
             }
@@ -51265,8 +51265,8 @@ const practiceTopicsData = [
                 "samples": [
                     {
                         "label": "Bài mẫu Cách 1 (Ngăn chặn ô nhiễm biển, bảo tồn tài nguyên quý giá - 25 từ)",
-                        "text": "Recycling is extremely vital because it prevents plastic pollution in our oceans and rivers. Reusing old materials helps save natural resources and protects wildlife.",
-                        "formatted": "→ Recycling is extremely vital because it prevents <span class=\"sub-hl\">plastic pollution in our oceans and rivers</span>. Reusing old materials helps <span class=\"sub-hl\">conserve precious natural resources</span> and protects wildlife."
+                        "text": "Recycling is very important because it prevents plastic pollution in our oceans and rivers. Reusing old materials helps save natural resources and protects wildlife.",
+                        "formatted": "→ Recycling is very important because it prevents <span class=\"sub-hl\">plastic pollution in our oceans and rivers</span>. Reusing old materials helps <span class=\"sub-hl\">save natural resources</span> and protects wildlife."
                     },
                     {
                         "label": "Bài mẫu Cách 2 (Tiết kiệm tiền bạc và giữ gìn môi trường sống trong lành - 24 từ)",
