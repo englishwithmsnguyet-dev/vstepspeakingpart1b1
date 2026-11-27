@@ -1457,7 +1457,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
             if (state.studentClass === 'CB220') {
-                const allowed = ['overview', 'flower-garden', 'yes-no', 'benefits', 'activities'];
+                const allowed = ['overview', 'flower-garden', 'yes-no', 'choice', 'wh-questions', 'benefits', 'activities'];
                 navItems.forEach(item => {
                     const target = item.getAttribute('data-target');
                     if (!allowed.includes(target)) {
@@ -1485,7 +1485,32 @@ document.addEventListener('DOMContentLoaded', () => {
                     if (overviewItem) activateTab('overview', overviewItem);
                 }
 
+                // Cập nhật trạng thái pills trong Wh-questions cho CB220 (mở đến câu 3 của WHAT)
+                const whPills = document.querySelectorAll('.w-pill');
+                whPills.forEach(pill => {
+                    const text = pill.textContent.trim().toUpperCase();
+                    if (!text.startsWith('WHAT')) {
+                        pill.classList.add('locked-pill');
+                        pill.style.opacity = '0.5';
+                        pill.style.cursor = 'not-allowed';
+                        if (!pill.querySelector('.pill-lock')) {
+                            const lockI = document.createElement('i');
+                            lockI.className = 'fa-solid fa-lock pill-lock';
+                            lockI.style.fontSize = '0.75rem';
+                            lockI.style.marginLeft = '4px';
+                            pill.appendChild(lockI);
+                        }
+                    } else {
+                        pill.classList.remove('locked-pill');
+                        pill.style.opacity = '1';
+                        pill.style.cursor = 'pointer';
+                        const lockI = pill.querySelector('.pill-lock');
+                        if (lockI) lockI.remove();
+                    }
+                });
+
                 renderYnSlide();
+                if (typeof window.filterWh === 'function') window.filterWh('what');
             }
 
             // Restore saved progress if same student
@@ -1663,9 +1688,9 @@ document.addEventListener('DOMContentLoaded', () => {
     function activateTab(target, item) {
         if (typeof stopAllActive25sTimers === 'function') stopAllActive25sTimers();
         if (state.studentClass === 'CB220') {
-            const allowed = ['overview', 'flower-garden', 'yes-no', 'benefits', 'activities'];
+            const allowed = ['overview', 'flower-garden', 'yes-no', 'choice', 'wh-questions', 'benefits', 'activities'];
             if (!allowed.includes(target)) {
-                alert('🔒 Mục này chưa được mở cho lớp CB220.\nHiện tại lớp CB220 được mở: Tổng quan, Yes/No Questions, Bảng Lợi Ích và Bảng Hoạt Động.');
+                alert('🔒 Mục này chưa được mở cho lớp CB220.\nHiện tại lớp CB220 được mở: Tổng quan, Yes/No, Choice, Wh-Questions (đến câu hỏi "3. What do you often do when [tình huống]?"), Bảng Lợi Ích và Bảng Hoạt Động.');
                 return;
             }
         }
@@ -1735,9 +1760,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     window.switchTab = function(target) {
         if (state.studentClass === 'CB220') {
-            const allowed = ['overview', 'flower-garden', 'yes-no', 'benefits', 'activities'];
+            const allowed = ['overview', 'flower-garden', 'yes-no', 'choice', 'wh-questions', 'benefits', 'activities'];
             if (!allowed.includes(target)) {
-                alert('🔒 Mục này chưa được mở cho lớp CB220.\nHiện tại lớp CB220 được mở: Tổng quan, Yes/No Questions, Bảng Lợi Ích và Bảng Hoạt Động.');
+                alert('🔒 Mục này chưa được mở cho lớp CB220.\nHiện tại lớp CB220 được mở: Tổng quan, Yes/No, Choice, Wh-Questions (đến câu hỏi "3. What do you often do when [tình huống]?"), Bảng Lợi Ích và Bảng Hoạt Động.');
                 return;
             }
         }
@@ -5576,6 +5601,10 @@ document.addEventListener('DOMContentLoaded', () => {
             alert('🔒 Nhóm câu hỏi này chưa được mở cho lớp CB219.\nHiện tại lớp CB219 được học đến câu hỏi "When" (bao gồm WHAT, WHO và WHEN).');
             return;
         }
+        if (state.studentClass === 'CB220' && cat !== 'what') {
+            alert('🔒 Nhóm câu hỏi này chưa được mở cho lớp CB220.\nHiện tại lớp CB220 được học đến câu hỏi "3. What do you often do when [tình huống – mệnh đề]?".');
+            return;
+        }
         document.querySelectorAll('.w-pill').forEach(p => p.classList.remove('active'));
         if (typeof window !== 'undefined' && window.event && window.event.currentTarget && window.event.currentTarget.classList) {
             window.event.currentTarget.classList.add('active');
@@ -5587,6 +5616,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!whShowcase) return;
         let list = whBank[cat] || [];
         const isCB219 = (state.studentClass === 'CB219');
+        const isCB220 = (state.studentClass === 'CB220');
         let cbNoticeHtml = '';
         if (isCB219) {
             cbNoticeHtml = `
@@ -5596,6 +5626,18 @@ document.addEventListener('DOMContentLoaded', () => {
                     </div>
                     <div style="font-size: 0.85rem; color: #64748b; font-weight: 500;">
                         Các dạng WHERE, WHY, HOW sẽ được mở theo tiến độ bài học
+                    </div>
+                </div>
+            `;
+        } else if (isCB220 && cat === 'what') {
+            list = list.slice(0, 3);
+            cbNoticeHtml = `
+                <div style="margin-bottom: 1.25rem; background: rgba(59, 130, 246, 0.08); border: 1.5px dashed #3b82f6; border-radius: 10px; padding: 0.75rem 1rem; display: flex; align-items: center; justify-content: space-between; gap: 0.75rem; flex-wrap: wrap;">
+                    <div style="display: flex; align-items: center; gap: 0.5rem; color: #1d4ed8; font-weight: 700; font-size: 0.95rem;">
+                        <i class="fa-solid fa-circle-info"></i> Lớp CB220: Mở các câu hỏi từ 1 đến 3 (đến câu hỏi "What do you often do when [tình huống]?")
+                    </div>
+                    <div style="font-size: 0.85rem; color: #64748b; font-weight: 500;">
+                        Các câu hỏi từ 4 đến 6 và các dạng Wh- khác sẽ được mở theo tiến độ bài học
                     </div>
                 </div>
             `;
@@ -5729,8 +5771,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // Random Practice Selector
     
     window.spinWheel = (type) => {
-        if (state.studentClass === 'CB220' && type !== 'yn') {
-            alert('🔒 Phần luyện tập này chưa được mở cho lớp CB220.\nHiện tại lớp CB220 được mở: Tổng quan, Yes/No Questions, Bảng Lợi Ích và Bảng Hoạt Động.');
+        if (state.studentClass === 'CB220' && type !== 'yn' && type !== 'choice' && type !== 'wh') {
+            alert('🔒 Phần luyện tập này chưa được mở cho lớp CB220.\nHiện tại lớp CB220 được mở: Tổng quan, Yes/No, Choice, Wh-Questions (đến câu hỏi "3. What do you often do when [tình huống]?"), Bảng Lợi Ích và Bảng Hoạt Động.');
             return;
         }
         if (state.studentClass === 'CB219' && type !== 'yn' && type !== 'choice' && type !== 'wh') {
@@ -5746,6 +5788,8 @@ document.addEventListener('DOMContentLoaded', () => {
             let whList = [];
             if (state.studentClass === 'CB219') {
                 whList = [...(safeWhBank['what'] || []), ...(safeWhBank['who'] || []), ...(safeWhBank['when'] || [])];
+            } else if (state.studentClass === 'CB220') {
+                whList = safeWhBank['what'] ? safeWhBank['what'].slice(0, 3) : [];
             } else {
                 const whValues = Object.values(safeWhBank);
                 whList = whValues.flat ? whValues.flat() : whValues.reduce((acc, val) => acc.concat(val), []);
